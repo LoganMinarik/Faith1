@@ -345,6 +345,10 @@ footer {
     background-color: #3be085; /* Contact color */
 }
 
+.socialLinkInstagram:hover {
+    background: linear-gradient(to bottom, #ff0cdf, #ffce4e);; /* JavaScript color */
+}
+
 .socialLinkBlueSky:hover {
     background-color: cornflowerblue;
 }
@@ -367,6 +371,11 @@ footer {
 
 .socialLinkUsdc:hover{
     background-color: #2775ca;
+}
+
+.socialLinkPyusd:hover{
+    background-color: #0071f3;
+
 }
 
 .socialLinkPyusd:hover{
