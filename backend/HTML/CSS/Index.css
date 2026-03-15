@@ -296,6 +296,7 @@ footer {
     border-radius: 14px; /* Creates the squircle shape */
     margin: 0 5px;
     transition: transform 0.3s ease, background-color 0.3s ease;
+    overflow: hidden; /* Ensure image doesn't bleed out of rounded corners */
 }
 .squircle:hover {
     transform: translateY(-3px);
@@ -318,23 +319,22 @@ footer {
     width: 48px;
     height: 48px;
     border-radius: 14px;
+    padding: 8px; /* Add padding here so icon doesn't touch edges */
 }
 
 .social-icons a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
     background-color: #333;
-    border-radius: 50%;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
 .social-icons a img {
-    width: 15px;
-    height: 15px;
+    width: 100%; /* Scale to fit container minus padding */
+    height: 100%; /* Scale to fit container minus padding */
+    object-fit: contain; /* Keep aspect ratio */
     filter: invert(1);
 }
 
