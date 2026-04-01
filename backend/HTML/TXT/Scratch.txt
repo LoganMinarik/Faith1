@@ -25,3 +25,18 @@
 
 
             <h3>Portfolio Final no.X</h3>
+
+
+
+            Copy paste the bio ✅
+            Remove the 1# -#6 nav system the sticky menu of full pro ✅
+            34,37 need moved to Decor Int
+            45-58 need to be placed in cosplay ✅
+            22, 31,30,32 need placed in Candid Photography
+            White->Pink->Blue gradient ✅
+            Remove Faith. Replace with Portfolio. From index.html ✅
+            Remove Faith h1 from Full Gallary -> Full Gallery in FullProfile.html✅
+            Remove the h2 subtext from index.html ✅
+            Keep button color Black & White ✅
+             Remove the indicators ie( #1, #2,#3) from FullProfile.html
+            Change the indexing system for the cards so that they fill left to right not left -? Left Right-> LEft mIddle right, Left-> Left Middle -> Left Middle Right

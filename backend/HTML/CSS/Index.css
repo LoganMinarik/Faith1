@@ -134,11 +134,10 @@ h2 {
 
 /* Section Content */
 .section-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(33.333% - 1rem), 1fr));
     gap: 1rem;
-    align-items: stretch; /* Make cards stretch to equal heights */
+    justify-content: start; /* Align to the left */
 }
 
 /* Card Styles */
@@ -147,8 +146,6 @@ h2 {
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex: 1 1 calc(33.333% - 1rem);
-    max-width: calc(33.333% - 1rem);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
@@ -647,13 +644,13 @@ html {
     }
 
     .section-content {
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr; /* 1 card per row on small screens */
+        gap: 1rem;
     }
 
     .card, .card-clear {
-        flex-basis: 100%;
-        max-width: 90%;
+        max-width: 100%;
     }
 
     .modal-content {
