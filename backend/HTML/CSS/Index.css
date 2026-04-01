@@ -538,7 +538,7 @@ nav {
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 20px;
-    background-color: #007aff;
+    background-color: #000000;
     color: #fff;
     font-size: 1rem;
     font-weight: 600;
@@ -564,8 +564,8 @@ a {
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 20px;
-    background-color: #e49ec5;
-    color: #000000;
+    background-color: #000000;
+    color: #ffffff;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
