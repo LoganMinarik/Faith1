@@ -584,15 +584,32 @@ html {
     background-color: #333;
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    /* Mobile-friendly scrolling additions below */
+    overflow-x: auto; /* allow horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+}
+
+/* Optional: hide scrollbar for cleaner look, works in webkit browsers */
+.sticky-menu::-webkit-scrollbar {
+    display: none;
+}
+.sticky-menu {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .sticky-menu ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0 10px; /* add some padding to ends */
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* change to flex-start so it doesn't try to center and cut off long content on small screens */
     gap: 20px;
+    width: max-content; /* Ensure the ul takes up as much width as it needs for its items */
+}
+
+.sticky-menu li {
+    white-space: nowrap; /* prevent text from wrapping inside the link */
 }
 
 .sticky-menu li a {
@@ -602,6 +619,7 @@ html {
     padding: 8px 16px;
     border-radius: 4px;
     transition: background-color 0.3s;
+    display: block; /* Ensure a tag acts as block to fill li */
 }
 
 .sticky-menu li a:hover {
